@@ -5,6 +5,7 @@
     <string name="buttonA">Position A</string>
     <string name="buttonB">Position B</string>
     <string name="buttonC">Position C</string>
+    <string name="buttonD">Position D</string>
     <string name="buttonHome">Home Base</string>
     <string name="xPosition">X coordinate</string>
     <string name="yPosition">Y coordinate</string>

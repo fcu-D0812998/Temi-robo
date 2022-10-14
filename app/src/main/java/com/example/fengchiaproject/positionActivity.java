@@ -1,10 +1,12 @@
 package com.example.fengchiaproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -24,12 +26,6 @@ public class positionActivity extends AppCompatActivity implements
 
         private Robot mRobot;
         private final String TAG = positionActivity.class.getSimpleName();
-
-        /**
-         * Function getTilt is used to get integer value from EditText views
-         * @param viewId Used to find view we want to get value from
-         * @return Value of view or if view is empty function returns "50" so robot ends up facing upwards towards user
-         */
         public int getTilt(int viewId) {
             EditText text = findViewById(viewId);
             String tiltVal = text.getText().toString();
@@ -41,12 +37,6 @@ public class positionActivity extends AppCompatActivity implements
                 return Integer.parseInt(tiltVal);
             }
         }
-
-        /**
-         * Function getFloat is used to get float values from EditText views
-         * @param viewId Used to find view we want to get value from
-         * @return Value of view or if view is empty function returns "0" to prevent app from crashing and robot shouldn't change it's position
-         */
         public float getFloat(int viewId) {
             EditText text = findViewById(viewId);
             String floatVal = text.getText().toString();
@@ -67,6 +57,17 @@ public class positionActivity extends AppCompatActivity implements
             mRobot = Robot.getInstance(); //Here we initialize Robot instance
 
             Button gotoCoordinates = findViewById(R.id.buttonCoordinates);
+            Button back_button = findViewById(R.id.back_button);
+
+
+
+            back_button.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(positionActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
+            });
             gotoCoordinates.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -87,10 +88,16 @@ public class positionActivity extends AppCompatActivity implements
             });
 
             Button firstPosition = findViewById(R.id.buttonFirst);
+            /*gotoCoordinates.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    mRobot.goToPosition(new Position(1.2453,-0.2265,-0.6005,50));
+                }
+            });*/
             firstPosition.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view) { //OnClick starts action goTo for a set of previously defined coordinates X,Y, and Z axis rotation angle and display tilt angle
-                    mRobot.goTo("a");
+                public void onClick(View view) {
+                    mRobot.goTo("A");
                 }
             });
 
@@ -129,10 +136,6 @@ public class positionActivity extends AppCompatActivity implements
             mRobot.removeOnGoToLocationStatusChangedListener(this);
         }
 
-        /**
-         * Hide app's top bar when parameter "isReady" is true
-         * @param isReady Robot status parameter
-         */
         @Override
         public void onRobotReady(boolean isReady) {
             if (isReady) {
@@ -141,10 +144,6 @@ public class positionActivity extends AppCompatActivity implements
             }
         }
 
-        /**
-         * Function used to display robot's current X,Y position and rotation & display tilt angle in TextView
-         * @param position holds values of robot's current position (X,Y,Yaw,tilt)
-         */
         @Override
         public void onCurrentPositionChanged(@NonNull Position position) {
             TextView textViewPosition = findViewById(R.id.textViewPosition);
@@ -153,13 +152,6 @@ public class positionActivity extends AppCompatActivity implements
             textViewPosition.setText(str);
         }
 
-        /**
-         * Functions checks GoToLocation Status of robot with following parameters:
-         * @param s name of location where Temi is going
-         * @param s1 navigation status (eg. GOING, CALCULATING, COMPLETE) which is used here to determine that Robot arrived at set location
-         * @param i Id Code that represents description of Navigation status
-         * @param s2 informative description of navigation status (eg. obstacle info)
-         */
         @Override
         public void onGoToLocationStatusChanged(@NonNull String s, @NonNull String s1, int i, @NonNull String s2) {
             if (s1.equals(COMPLETE)) {
