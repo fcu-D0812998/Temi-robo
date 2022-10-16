@@ -11,6 +11,7 @@ import java.io.*;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -28,14 +29,33 @@ public class SQLActivity extends AppCompatActivity {
 
     private static HttpURLConnection get_connection;
     private static Scanner in = new Scanner(System.in);
-    public static void main(String[] args) throws Exception {
-        System.out.println("\nWelcome to POST Request Maker!");
-        String url = "http://192.168.100.107:3000/";
-        String parameters = "{\"price\": \"100\"}";
-        sendPost(url, parameters);
+    TextView paymenttmp = (TextView) findViewById(R.id.payment);
+    TextView pricetmp = (TextView) findViewById(R.id.price);
+    TextView productnametmp = (TextView) findViewById(R.id.productname);
+    TextView quantitytmp = (TextView) findViewById(R.id.quantity);
+    MaterialButton loginbtn = (MaterialButton) findViewById(R.id.login2);
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sqlactivity);
+        String url = "http://192.168.100.107:3000/";
+        String parameters = "{\"price\": pricetmp,\"payment\":paymenttmp,\"productnametmp\":productnametmp,\"quantity\":quantitytmp}";
+        loginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    sendPost(url,parameters);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+    public static void main(String[] args){
 
     }
+
     private static void sendPost(String url, String parameters) throws Exception {
         URL obj = new URL(url);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -72,23 +92,5 @@ public class SQLActivity extends AppCompatActivity {
         out.println(response.toString());
         System.out.println("Response copied to rsp.txt.");
     }
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sqlactivity);
-        TextView payment = (TextView) findViewById(R.id.payment);
-        TextView price = (TextView) findViewById(R.id.price);
-        TextView productname = (TextView) findViewById(R.id.productname);
-        TextView quantity = (TextView) findViewById(R.id.quantity);
-        MaterialButton loginbtn = (MaterialButton) findViewById(R.id.login);
-
-        loginbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-    }
-
 
 }
