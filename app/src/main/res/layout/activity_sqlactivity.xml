@@ -6,5 +6,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SQLActivity">
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/payment"
+      android:hint="payment"
+      tools:ignore="MissingConstraints" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <EditText
+      android:id="@+id/price"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="price"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="56dp" />
+
+  <EditText
+      android:id="@+id/productname"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="productname"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="101dp" />
+
+  <EditText
+      android:id="@+id/quantity"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="quantity"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="0dp"
+      tools:layout_editor_absoluteY="146dp" />
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:hint="Login"
+      tools:layout_editor_absoluteX="161dp"
+      tools:layout_editor_absoluteY="211dp"
+      tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

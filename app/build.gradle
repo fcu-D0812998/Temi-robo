@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+
 }
 
 android {
@@ -46,6 +47,6 @@ dependencies {
     implementation 'com.robotemi:sdk:0.10.79'
     //Navigation Component
     implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'\
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
 
 }
