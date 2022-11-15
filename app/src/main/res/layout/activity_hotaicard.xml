@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".hotaicardActivity">
+
+        <ImageButton
+            android:id="@+id/lexus_button"
+            android:layout_width="323dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lexus_button" />
+
+        <TextView
+            android:id="@+id/hotaicard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="和泰聯名卡 | Hotai X CTBC Bank"
+            android:textSize="@android:dimen/app_icon_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/lexus_button" />
+
+
+
+        <ImageView
+            android:id="@+id/hotaicard_pagepic"
+            android:layout_width="900dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/hotaicard_title"
+            app:srcCompat="@drawable/hotaicard_intro" />
+
+        <ImageView
+            android:id="@+id/hotaicard"
+            android:layout_width="900dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toBottomOf="@id/hotaicard_pagepic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/hotaicard1" />
+
+        <ImageView
+            android:id="@+id/hotaicard2"
+            android:layout_width="900dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toBottomOf="@id/hotaicard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/hotaicard2" />
+
+        <ImageView
+            android:id="@+id/hotaicard3"
+            android:layout_width="900dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toBottomOf="@id/hotaicard2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/hotaicard3" />
+
+        <ImageView
+            android:id="@+id/hotaicard4"
+            android:layout_width="900dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toBottomOf="@id/hotaicard3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/hotaicard4" />
+
+        <ImageView
+            android:id="@+id/hotaicard5"
+            android:layout_width="900dp"
+            android:layout_height="600dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toBottomOf="@id/hotaicard4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/hotaicard5" />
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@id/lexus_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_button" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="250dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@id/lexus_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu"
+            app:tint="#9E9E9E"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

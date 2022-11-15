@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ailee/Desktop/fengchiaproject/app/src/main/res/layout/activity_collection.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/Ailee/Desktop/fengchiaproject/app/src/main/res/layout/activity_sqlactivity.xml" value="0.25" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/123 (1)/asd/app/src/main/res/layout/activity_camera.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/123 (1)/asd/app/src/main/res/layout/activity_collection.xml" value="0.209375" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/123 (1)/asd/app/src/main/res/layout/activity_hotaicard.xml" value="0.286231884057971" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/123 (1)/asd/app/src/main/res/layout/activity_hotaipay.xml" value="0.209375" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/123 (1)/asd/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/123 (1)/asd/app/src/main/res/layout/activity_sqlactivity.xml" value="0.209375" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/123 (1)/asd/app/src/main/res/layout/menupopup.xml" value="0.23645833333333333" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/123 (1)/asd/app/src/main/res/layout/position.xml" value="0.22" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/drawable/edit_background.xml" value="0.169" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/activity_camera.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/activity_collection.xml" value="0.1" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/activity_foodmenu.xml" value="0.29750644883920896" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/activity_hotaicard.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/activity_main.xml" value="0.17995378393991912" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/activity_maintain.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/activity_sqlactivity.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/menupopup.xml" value="0.32447916666666665" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/popup.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Oscar/AndroidStudioProjects/Temi-robo-master/app/src/main/res/layout/position.xml" value="0.18020833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

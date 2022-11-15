@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">fengchiaproject</string>
+    <string name="button">|和泰聯名卡|</string>
+    <string name="buttonCoordinates">Go to set coordinates</string>
+    <string name="buttonA">Position A</string>
+    <string name="buttonB">Position B</string>
+    <string name="buttonC">Position C</string>
+    <string name="buttonD">Position D</string>
+    <string name="buttonHome">Home Base</string>
+    <string name="xPosition">X coordinate</string>
+    <string name="yPosition">Y coordinate</string>
+    <string name="yawAngle">Yaw angle</string>
+    <string name="tiltAngle">Tilt angle</string>
+    <string name="positionCoordinates">position</string>
+    <string name="defaultTiltValue">50</string>
+</resources>

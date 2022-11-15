@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imagemenu"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.017"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/card_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/button"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/hotaicard_button"
+            app:layout_constraintEnd_toEndOf="@id/hotaicard_button"
+            app:layout_constraintStart_toStartOf="@id/hotaicard_button" />
+
+        <Button
+            android:id="@+id/pay_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:text="|和泰PAY|"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/hotaipay_button"
+            app:layout_constraintEnd_toEndOf="@id/hotaipay_button"
+            app:layout_constraintStart_toStartOf="@id/hotaipay_button" />
+
+        <Button
+            android:id="@+id/maintain_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:text="|車輛保養狀況|"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/maintain_button"
+            app:layout_constraintEnd_toEndOf="@id/maintain_button"
+            app:layout_constraintStart_toStartOf="@id/maintain_button" />
+
+        <Button
+            android:id="@+id/collec_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:text="|LEXUS精品|"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/collection_btn"
+            app:layout_constraintEnd_toEndOf="@id/collection_btn"
+            app:layout_constraintStart_toStartOf="@id/collection_btn" />
+
+        <Button
+            android:id="@+id/menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:text="|餐點|"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/food_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/main_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lexus_button"
+            app:srcCompat="@drawable/mainpicture" />
+
+        <ImageButton
+            android:id="@+id/food_btn"
+            android:layout_width="900dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/food"
+            app:layout_constraintTop_toBottomOf="@+id/collection_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/lexus_button"
+            android:layout_width="323dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lexus_button" />
+
+
+        <ImageButton
+            android:id="@+id/hotaicard_button"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="100dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/hotaicard"
+            app:layout_constraintRight_toLeftOf="@id/hotaipay_button"
+            app:layout_constraintTop_toBottomOf="@id/main_pic" />
+
+        <ImageButton
+            android:id="@+id/hotaipay_button"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/hotaipay"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_pic" />
+
+        <ImageButton
+            android:id="@+id/maintain_button"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="100dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/maintainance"
+            app:layout_constraintLeft_toRightOf="@id/hotaipay_button"
+            app:layout_constraintTop_toBottomOf="@id/main_pic" />
+
+        <ImageButton
+            android:id="@+id/collection_btn"
+            android:layout_width="900dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/lexuscollection"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hotaipay_button" />
+
+        <ImageButton
+            android:id="@+id/btnCam"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/camera"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="200dp"
+            android:scaleType="fitXY"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintLeft_toRightOf="@id/lexus_button"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/navi_btn"
+            android:src="@drawable/navigation"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintRight_toLeftOf="@id/btnCam"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_btn"
+            android:hint="Login"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="211dp"
+            tools:ignore="MissingConstraints"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
+
+

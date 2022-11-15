@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".hotaicardActivity">
+
+
+        <ImageButton
+            android:id="@+id/lexus_button"
+            android:layout_width="323dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lexus_button" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="250dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@id/lexus_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu"
+            app:tint="#9E9E9E" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@id/lexus_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_button" />
+
+        <ImageView
+            android:id="@+id/food_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lexus_button"
+            app:srcCompat="@drawable/food_pic1"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="1100dp"
+            android:gravity="center_horizontal"
+            android:text="輕輕啜一口 我們精心準備的香味\n有來自巴西的濃郁\n英國皇室的優雅以及法國頂級的浪漫\n和充滿美國加州陽光的香甜\n用最嚴格的態度精選每一項食材\n用最精緻的服務款待每一個貴賓\n當您進入LEXUS的那一刻起\n一杯茶、一份點心或是一個悠閒的下午，都是完美"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food_pic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="100dp"
+            android:text="MENU"
+            android:textColor="@color/gray"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/coffe"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/coffe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="100dp"
+            android:gravity="left"
+            android:text="極品中深焙 \n\n 源自衣索比亞 - 西達摩省(Sidamon)最知名的咖啡 \n 小鎮，與巴西 - 米納斯省(Minas)中西部的喜拉朵 \n 台地，得天獨厚的地理環境，造就出高山精品豆 \n 獨特的「地域之味」。整體帶有似花瓣飛舞的花 \n 果香氣，入口圓潤中透著甘醇的口感，餘韻散發 \n 出優雅的蜂蜜甜香，質感令人驚豔！ \n\n 咖啡產區：\n 非洲  伊索比亞耶加雪菲  Ethiopia Yirgacheffe \n G2等級(瑕疵豆最少) \n 中南美洲  巴西喜朵拉  Brazil Cerrado \n NY2等級(瑕疵豆最少)\n"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="300dp"
+            android:text="美式咖啡    熱/冷 \n\n 濃縮咖啡    熱 \n\n 拿鐵       熱/冷 \n\n 卡布奇諾    熱/冷 \n\n"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/coffe"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="60dp"
+            android:gravity="left"
+            android:text="英國皇家御用茶品 \n\n 源自1706年的悠遠茶香 \n 英國最古老的唐寧紅茶 \n 在地球上，茶香嬛繞了300餘年 \n 至今，依然是貴族皇室，雅仕饕客的最愛 \n 獻給  追求極致口感的您 \n"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="170dp"
+            android:gravity="left"
+            android:text="紅茶    熱/冷 \n\n 奶茶    熱/冷 \n\n 綠茶    熱/冷\n\n 花茶    熱 \n"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:gravity="left"
+            android:text="麵包系列"
+            android:textColor="@color/gray"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:gravity="left"
+            android:text="軟法麵包(例假日不供應) \n\n 甜點蛋糕(例假日不供應) \n\n 焙果(例假日不供應) \n\n 堅米果 \n\n 米漢堡 ．午餐時段供應(11:00 - 14:00) \n\n (例假日不供應)"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1514dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

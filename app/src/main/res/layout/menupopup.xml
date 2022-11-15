@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant30"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/close_btn"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/material_dynamic_neutral_variant30"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/menu.card_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/material_dynamic_neutral_variant30"
+            android:text="|和泰聯名卡|"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/menu.pay_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/material_dynamic_neutral_variant30"
+            android:text="|和泰PAY|"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/menu.maintain_btn"
+            android:layout_width="332dp"
+            android:layout_height="91dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/material_dynamic_neutral_variant30"
+            android:text="|車輛保養狀況|"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/menu.collec_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/material_dynamic_neutral_variant30"
+            android:text="|LEXUS精品|"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

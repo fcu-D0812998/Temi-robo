@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".collectionActivity">
+
+        <ImageButton
+            android:id="@+id/lexus_button"
+            android:layout_width="323dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lexus_button" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@id/lexus_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_button" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="250dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@id/lexus_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu"
+            app:tint="#9E9E9E" />
+
+        <ImageButton
+            android:id="@+id/coll1_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lexus_button"
+            app:srcCompat="@drawable/collec1" />
+
+        <ImageButton
+            android:id="@+id/coll2_btn"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll1_btn"
+            app:layout_constraintTop_toBottomOf="@+id/lexus_button"
+            android:onClick="example"
+            app:srcCompat="@drawable/collec2" />
+
+        <ImageButton
+            android:id="@+id/coll3_btn"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            android:onClick="example"
+            app:layout_constraintStart_toEndOf="@+id/coll2_btn"
+            app:layout_constraintTop_toBottomOf="@+id/lexus_button"
+            app:srcCompat="@drawable/collec3" />
+
+        <ImageButton
+            android:id="@+id/coll4_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll3_btn"
+            app:layout_constraintTop_toBottomOf="@+id/lexus_button"
+            app:srcCompat="@drawable/collec4" />
+
+        <ImageButton
+            android:id="@+id/coll5_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coll1_btn"
+            app:srcCompat="@drawable/collec5" />
+
+        <ImageButton
+            android:id="@+id/coll6_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll5_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll2_btn"
+            app:srcCompat="@drawable/collec6" />
+
+        <ImageButton
+            android:id="@+id/coll7_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll6_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll3_btn"
+            app:srcCompat="@drawable/collec7" />
+
+        <ImageButton
+            android:id="@+id/coll8_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll7_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll4_btn"
+            app:srcCompat="@drawable/collec8" />
+
+        <ImageButton
+            android:id="@+id/coll9_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coll5_btn"
+            app:srcCompat="@drawable/collec9" />
+
+        <ImageButton
+            android:id="@+id/coll10_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll9_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll6_btn"
+            app:srcCompat="@drawable/collec10" />
+
+        <ImageButton
+            android:id="@+id/coll11_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll10_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll7_btn"
+            app:srcCompat="@drawable/collec11" />
+
+        <ImageButton
+            android:id="@+id/coll12_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll11_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll8_btn"
+            app:srcCompat="@drawable/collec12" />
+
+        <ImageButton
+            android:id="@+id/coll13_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coll9_btn"
+            app:srcCompat="@drawable/collec13" />
+
+        <ImageButton
+            android:id="@+id/coll14_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll13_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll10_btn"
+            app:srcCompat="@drawable/collec14" />
+
+        <ImageButton
+            android:id="@+id/coll15_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll14_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll11_btn"
+            app:srcCompat="@drawable/collec15" />
+
+        <ImageButton
+            android:id="@+id/coll16_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll15_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll12_btn"
+            app:srcCompat="@drawable/collec16" />
+
+        <ImageButton
+            android:id="@+id/coll17_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coll13_btn"
+            app:srcCompat="@drawable/collec17" />
+
+        <ImageButton
+            android:id="@+id/coll18_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll13_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll14_btn"
+            app:srcCompat="@drawable/collec18" />
+
+        <ImageButton
+            android:id="@+id/coll19_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll14_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll15_btn"
+            app:srcCompat="@drawable/collec19" />
+
+        <ImageButton
+            android:id="@+id/coll20_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll15_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll16_btn"
+            app:srcCompat="@drawable/collec20" />
+
+        <ImageButton
+            android:id="@+id/coll21_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coll19_btn"
+            app:srcCompat="@drawable/collec21" />
+
+        <ImageButton
+            android:id="@+id/coll22_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll21_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll18_btn"
+            app:srcCompat="@drawable/collec22" />
+
+        <ImageButton
+            android:id="@+id/coll23_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll22_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll19_btn"
+            app:srcCompat="@drawable/collec23" />
+
+        <ImageButton
+            android:id="@+id/coll24_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll23_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll20_btn"
+            app:srcCompat="@drawable/collec24" />
+
+        <ImageButton
+            android:id="@+id/coll25_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coll21_btn"
+            app:srcCompat="@drawable/collec25" />
+
+        <ImageButton
+            android:id="@+id/coll26_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll25_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll22_btn"
+            app:srcCompat="@drawable/collec26" />
+
+        <ImageButton
+            android:id="@+id/coll27_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll26_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll23_btn"
+            app:srcCompat="@drawable/collec27" />
+
+        <ImageButton
+            android:id="@+id/coll28_btn"
+            android:onClick="example"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="44dp"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toEndOf="@+id/coll27_btn"
+            app:layout_constraintTop_toBottomOf="@+id/coll24_btn"
+            app:srcCompat="@drawable/collec28" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
